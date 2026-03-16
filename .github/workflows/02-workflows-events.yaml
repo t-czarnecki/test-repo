@@ -1,9 +1,6 @@
 name: 02 – Workflow Events
 on: 
   workflow_dispatch:
-  pull_request:
-    branches:
-      - main
   schedule:
     - cron: '0/5 * * * *' # Uruchamiaj co 5 minut
 jobs:
