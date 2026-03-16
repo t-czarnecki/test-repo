@@ -15,6 +15,6 @@ jobs:
         run: |
           echo "Plik nr 1" > C:\Users\tomas\moje_repo\plik1.txt
           echo "Plik nr 2" > C:\Users\tomas\moje_repo\plik2.txt
-          echo "Plik nr 3" > plik3.txt
+          echo "Plik nr 3" > C:\Users\tomas\moje_repo\plik3.txt
       - name: Wyświetlam zawartość
-        run: cat plik1.txt plik2.txt
+        run: cat C:\Users\tomas\moje_repo\plik1.txt C:\Users\tomas\moje_repo\plik2.txt
