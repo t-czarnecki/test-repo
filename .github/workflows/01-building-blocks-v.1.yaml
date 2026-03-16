@@ -2,7 +2,8 @@
 name: 01 - Build Blocks v.1
 
 on: 
-  workflow_dispatch
+  push:
+  workflow_dispatch:
 
 jobs:
   echo-hello:
