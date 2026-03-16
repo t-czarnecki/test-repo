@@ -2,7 +2,6 @@
 name: 01 - Build Blocks v.1
 
 on: 
-  push:
   workflow_dispatch:
 
 jobs:

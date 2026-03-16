@@ -6,7 +6,6 @@ on:
       - main
   schedule:
     - cron: '0/5 * * * *' # Uruchamiaj co 5 minut
-
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
