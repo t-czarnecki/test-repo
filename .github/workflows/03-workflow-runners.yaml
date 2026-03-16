@@ -11,6 +11,8 @@ jobs:
         run: |
           echo "This job is running on an Ubuntu runner."
           echo "$RUNNER_OS"
+          cat /proc/cpuinfo
+          cat /proc/meminfo
   windows-echo:
     runs-on: windows-latest
     steps:
