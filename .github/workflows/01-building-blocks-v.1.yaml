@@ -12,8 +12,8 @@ jobs:
         run: echo "Hello, World!"
       - name: Tworze pliki
         run: |
-          echo "Plik nr 1" >plik1.txt
-          echo "Plik nr 2" >plik2.txt
-          echo "Plik nr 3" >plik3.txt
+          echo "Plik nr 1" > plik1.txt
+          echo "Plik nr 2" > plik2.txt
+          echo "Plik nr 3" > plik3.txt
       - name: Wyświetlam zawartość
         run: cat plik1.txt plik2.txt
