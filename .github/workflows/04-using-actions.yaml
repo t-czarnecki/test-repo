@@ -6,13 +6,15 @@ on:
 jobs:
   ubuntu-echo:
     runs-on: ubuntu-latest
+    default:
+      run: 
+        working-directory: cwiczenia/react-app
     steps:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install Dependencies
-        run: npm ci
-        working-directory: cwiczenia/react-app
       - name: Echo something
         run: echo "Hello world from Ubuntu"
+      - name: Install Dependencies
+        run: npm ci
