@@ -8,7 +8,9 @@ on:
     branches:
       - main
     # Tylko otwarcie PR oraz synchronizacja (np. dopchnięcie nowych commitów do gałęzi PR)
-    types: [closed]obs:
+    types: [closed]
+
+jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
