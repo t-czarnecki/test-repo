@@ -1,0 +1,19 @@
+---
+name: 06 - Context
+on:
+  workflow_dispatch:
+    inputs:
+      debug:
+        type: boolean
+        default: false
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo data
+        run: |
+            echo "Debug: ${{ github.event.inputs.debug }}"
+            echo "Event name: ${{ github.event_name }}"
+            echo "Workflow: ${{ github.workflow }}"
+            echo "Actor: ${{ github.actor }}"
+        
