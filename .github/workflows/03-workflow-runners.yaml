@@ -30,7 +30,7 @@ jobs:
           echo "This job is running on a MacOS runner."
           echo "$RUNNER_OS"
 
-self-hosted-echo:
+  self-hosted-echo:
     runs-on: tcz
     steps:
       - name: Show OS
