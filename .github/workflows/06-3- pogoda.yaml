@@ -8,7 +8,7 @@ on:
       city:
         description: "City to get weather info for"
         type: string
-        default: "Warsaw"
+        default: "Wroclaw"
 
 env:
   MY_KLUCZYK: '7cff9972d5c98a9a47ddf6a59cb34d8e'
