@@ -6,8 +6,9 @@ on:
 jobs:
   ubuntu-echo:
     runs-on: ubuntu-latest
-    run: 
-      working-directory: cwiczenia/react-app
+    defaults:
+      run: 
+        working-directory: cwiczenia/react-app
     steps:
       - name: Setup node
         uses: actions/setup-node@v4
