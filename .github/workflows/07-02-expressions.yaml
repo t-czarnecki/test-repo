@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  WORKDIR: ./CWICZENIA/07-expressions/pogoda_python_flusk
+  WORKDIR: ./cwiczenia/07-expressions/pogoda_python_flusk
   TEST_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/python_pogoda:test
   HUB_IMAGE_BASE: ${{ secrets.DOCKERHUB_USERNAME }}/python_pogoda
   # środowisko w zależności od gałęzi"
