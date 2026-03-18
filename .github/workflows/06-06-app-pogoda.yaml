@@ -69,7 +69,7 @@ jobs:
         #if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           SHORT_SHA="${GITHUB_SHA::7}"
-          HUB_IMAGE_BASE="${{ secrets.DOCKERHUB_USERNAME }}/python_pogoda_16_03_2026"
+          HUB_IMAGE_BASE="${{ secrets.DOCKERHUB_USERNAME }}/tcz_pogoda_api"
 
           echo "Taguję obraz:"
           echo " - $HUB_IMAGE_BASE:tomekcz"
@@ -82,7 +82,7 @@ jobs:
         #if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           SHORT_SHA="${GITHUB_SHA::7}"
-          HUB_IMAGE_BASE="${{ secrets.DOCKERHUB_USERNAME }}/python_pogoda_16_03_2026"
+          HUB_IMAGE_BASE="${{ secrets.DOCKERHUB_USERNAME }}/tcz_pogoda_api"
 
           docker push "$HUB_IMAGE_BASE:tomekcz"
           docker push "$HUB_IMAGE_BASE:$SHORT_SHA"
